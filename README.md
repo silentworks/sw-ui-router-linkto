@@ -82,7 +82,7 @@ app.config(['$stateProvider', '$urlRouterProvider',
                 }
             })
             .state('route1', {
-                url: "/route1",
+                url: "/about",
                 views: {
                     "viewA": {
                         templateUrl: "route1.viewA.html"
@@ -93,7 +93,7 @@ app.config(['$stateProvider', '$urlRouterProvider',
                 }
             })
             .state('route2', {
-                url: "/route2",
+                url: "/who",
                 views: {
                     "viewA": {
                         templateUrl: "route2.viewA.html"
@@ -118,7 +118,7 @@ app.config(['$stateProvider', '$urlRouterProvider',
 ]);
 ```
 
-and the html
+and the angularjs html
 
 ```html
 <!-- index.html -->
@@ -131,6 +131,33 @@ and the html
     <linkto state="route2.plus" state-params="{id: 1}">Route with Param</linkto>
 </body>
 ```
+
+The html rendered in the browser will look like this:
+
+```html
+<!-- index.html -->
+<body>
+    <div ui-view="viewA"></div>
+    <div ui-view="viewB"></div>
+    <!-- Also a way to navigate -->
+    <a href="#/about">Route 1</a>
+    <a href="#/who">Route 2</a>
+    <a href="#/who/1">Route with Param</a>
+</body>
+```
+
+#### TODO
+
+- find a way to check if $locationProvider.html5Mode() is set to true
+- find a way to check what $locationProvider.hashPrefix() is set to
+
+## Authors
+
+[Andrew Smith](https://github.com/silentworks)
+
+## License
+
+MIT Public License
 
 [uigoto]: https://github.com/mgonto/mgo-ui-router-goto
 [emberjs]: http://emberjs.com/guides/templates/links/

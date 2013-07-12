@@ -27,7 +27,7 @@ angular.module('sw.ui.state.linkto', ['ui.state'])
 
                 var href = $state.href(stateName, angular.extend({}, $state.params, params));
                 if (!$linktoConfig.html5) {
-                    href = '/#' + href;
+                    href = '#' + href;
                 }
                 return $linktoConfig.baseUrl + href;
             }
