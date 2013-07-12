@@ -1,0 +1,18 @@
+{
+  "name": "sw-ui-state-linkto",
+  "version": "0.1.0",
+  "main": "./linkto.js",
+  "description": "A ui-router directive that allow you to link to states by rendering the url in an a tag",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/silentworks/sw-ui-state-linkto.git"
+  },
+  "dependencies": {
+    "angular": "*"
+  },
+  "ignore": [
+    "node_modules",
+    "components",
+    "lib"
+  ]
+}
