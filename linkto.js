@@ -1,4 +1,4 @@
-angular.module('sw.ui.state.linkto', ['ui.state'])
+angular.module('sw.ui.router.linkto', ['ui.state'])
 
 .value('$linktoConfig', {
     baseUrl: '',

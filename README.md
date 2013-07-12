@@ -8,7 +8,7 @@ This directive is inspired by [uiGoto][uigoto], [EmberJS][emberjs] linkTo helper
 
 ## Install
 
-- with bower: `bower install sw-ui-state-linkto`
+- with bower: `bower install sw-ui-router-linkto`
 - by cloning this repo
 
 ## How to use
@@ -16,7 +16,7 @@ This directive is inspired by [uiGoto][uigoto], [EmberJS][emberjs] linkTo helper
 You first need to add this directive as a dependency to your AngularJS project.
 
 ```js
-angular.module('myProject', ['sw.ui.state.linkto']);
+angular.module('myProject', ['sw.ui.router.linkto']);
 ```
 
 All you have to do now is add the `linkto` directive anywhere in your AngularJS template.
@@ -62,7 +62,7 @@ or with a variable
 A complete example
 
 ```js
-var app = angualar.module('myProject', ['sw-ui-state-linkto']);
+var app = angualar.module('myProject', ['sw.ui.router.linkto']);
 
 app.config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
