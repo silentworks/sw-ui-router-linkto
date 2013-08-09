@@ -21,6 +21,11 @@ angular.module('myProject', ['sw.ui.router.linkto']);
 
 All you have to do now is add the `linkto` directive anywhere in your AngularJS template.
 
+### Configuration
+
+You can configure the __baseUrl__, __html5__ and __hashPrefix__.
+
+
 ### Attributes
 
 The `linkto` directive currently have 2 attributes.

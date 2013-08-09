@@ -2,7 +2,8 @@ angular.module('sw.ui.router.linkto', ['ui.state'])
 
 .value('$linktoConfig', {
     baseUrl: '',
-    html5: false
+    html5: false,
+    hashPrefix: '#',
 })
 
 .directive('linkto', function ($linktoConfig) {
@@ -27,7 +28,7 @@ angular.module('sw.ui.router.linkto', ['ui.state'])
 
                 var href = $state.href(stateName, angular.extend({}, $state.params, params));
                 if (!$linktoConfig.html5) {
-                    href = '#' + href;
+                    href = $linktoConfig.hashPrefix + href;
                 }
                 return $linktoConfig.baseUrl + href;
             }
